@@ -1,0 +1,60 @@
+.Popup__container {
+	max-height: 10vh;
+	display: flex;
+	align-items: center;
+}
+
+.Popup__message {
+	flex-grow: 1;
+	padding: 1rem 2rem;
+	text-align: center;
+	font-size: 1.2rem;
+	color: white;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.Popup__close {
+	padding: 1rem;
+	font-size: 2rem;
+	color: white;
+}
+
+.success {
+	height: 10vh;
+	background-color: green;
+	animation: fadeInInfo 0.3s;
+}
+
+.error {
+	height: 10vh;
+	background-color: #eb4158;
+	animation: fadeInInfo 0.3s;
+}
+
+.fade-out {
+	padding: 0;
+	animation: fadeOutInfo 0.5s;
+}
+
+@keyframes fadeInInfo {
+	from {
+		max-height: 0.00001px;
+		opacity: 0;
+	}
+	to {
+		max-height: 10vh;
+		opacity: 0.8;
+	}
+}
+
+@keyframes fadeOutInfo {
+	from {
+		opacity: 0.8;
+		max-height: 10vh;
+	}
+	to {
+		opacity: 0;
+		max-height: 0.00001px;
+	}
+}
