@@ -115,6 +115,7 @@ class Profile extends Component {
 							<TextareaAutosize
 								minRows="1"
 								maxRows="5"
+								maxLength="155"
 								id="bio"
 								name="bio"
 								defaultValue={bio}
